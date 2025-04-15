@@ -12,7 +12,7 @@ const Books = () => {
 
     return (
         <section className="books">
-            {books.map(({ image: image, id, title }) => (
+            {books.map(({ image, id, title }) => (
                 <article key={id} className="book">
                     <div className="book-image">
                         <img src={image} alt={title} />
